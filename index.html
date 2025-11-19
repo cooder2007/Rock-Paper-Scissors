@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Paper Scissors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-container">
+    <h1 class="game-title">Rock Paper Scissors</h1>
+
+    <div class="selection-screen screen active">
+        <p class="prompt">Select your Weapon</p>
+        <div class="options">
+            <button class="option-btn" data-choice="rock"><img src="Rock.png" alt="Rock"></button>
+            <button class="option-btn" data-choice="paper"><img src="Paper.png" alt="Paper"></button>
+            <button class="option-btn" data-choice="scissors"><img src="Scissors.png" alt="Scissors"></button>
+        </div>
+    </div>
+
+    <div class="result-screen screen">
+        <div class="player-vs-computer">
+            <div class="player-choice">
+                <p>Player</p>
+                <img id="player-hand" src="Rock.png" alt="Player's Choice">
+            </div>
+            <p class="vs-text">v/s</p>
+            <div class="computer-choice">
+                <p>Computer</p>
+                <img id="computer-hand" src="Rock.png" alt="Computer's Choice">
+            </div>
+        </div>
+        <p id="result-text" class="result-text"></p>
+        <button id="play-again-btn" class="play-again-btn">Play Again</button>
+    </div>
+
+    <div class="scoreboard">
+        <span class="score">Won: <span id="wins-count" class ="dd">0</span></span>
+        <span class="score">Lost: <span id="losses-count" class ="dd">0</span></span>
+        <span class="score">Draw: <span id="draws-count" class ="dd">0</span></span>
+    </div>
+    <footer class="footer">
+        <p>Created by <span class="creator">Coder no.7</span></p>
+    </footer>
+</div>
+
+<script src="script.js">
+</script>
+</body>
+</html>
